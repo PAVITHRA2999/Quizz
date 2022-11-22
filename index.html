@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div id="main-container">
+
+
+        <div id="user-input-container">
+
+            <div id="user-details">
+                <img id="logo" src="627954bff34cce4d7ffe1587_Testbook.png" alt="logo img">
+                <h1>Hello user!</h1>
+                <p><b>Enter your name to continue the Quiz.</b></p>
+                <form action="">
+                <input type="text" placeholder="ENTER YOUR NAME" style="width: 80%; padding: 0.3rem;" id="user_name">
+                <input type="submit" id="name-btn" value="ENTER">
+                </form>
+                <p>You'll have 300 seconds to complete the Quiz</p>
+                <hr>
+            </div>
+            <div id="category">
+                <h1>Select Category</h1>
+                <div id="category-btn-container">
+                    <button class="category-btn" id="category1">Pipes And Cisterns</button>
+                    <button class="category-btn" id="category2">Probability</button>
+                    <button class="category-btn" id="category3">Problems On Ages</button>
+                    <button class="category-btn" id="category4">Profit And Loss</button>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="question-container">
+
+            <div id="question-header-container">
+                <p id="category-name">Category name</p>
+                <div id="timer-score-container">
+                    <span id="timer-container">000</span>
+                    <span>SCORE: <b id="score-container">0</b></span>
+                </div>
+            </div>
+            <div id="question-box">
+                <p id="question-number">0/0</p>
+                <p id="question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nesciunt laboriosam
+                    quasi.</p>
+            </div>
+            <div id="answer-box">
+                <div id="answer-btn-container">
+                    <button class="answer-btn" type="submit">Answer 1</button>
+                    <button class="answer-btn" type="submit">Answer 2</button>
+                    <button class="answer-btn" type="submit">Answer 3</button>
+                    <button class="answer-btn" type="submit">Answer 4</button>
+                </div>
+                <div id="next-btn-container">
+                    <button id="next-btn">Next Question</button>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="result-container">
+
+            <h1>Quiz Result</h1>
+            <p><b id="name-container">XYZ</b> your result is:</p>
+            <p>Total Time Taken: <b id="time-taken-container">0</b> seconds</p>
+            <p>Total Question: <b>10</b></p>
+            <p>Attempt: <b id="attempt-container">0</b></p>
+            <p>Correct: <b id="correct-container">0</b></p>
+            <p>Wrong: <b id="wrong-container">0</b></p>
+            <p>Percentage: <b id="percentage-container">0</b>%</p>
+
+            <div id="result-btn-container">
+                <button class="result-btn" id="try-btn" type="submit">Try Again</button>
+                <button class="result-btn" id="home-btn" type="submit">Go To Home</button>
+            </div>
+
+        </div>
+        
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+:root{
+    --primary-color: rgb(36, 138, 233);
+}
+
+body{
+    background-color: #f2f2f2;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#main-container{
+    /* border: 2px solid #000; */
+    box-shadow: 0 0 10px 2px #000;
+    padding: 2%;
+    background-color: #fff;
+    border-radius: 2%;
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+}
+
+#logo{
+    width: 5rem;
+    height: auto;
+}
+
+#question{
+height: 4rem;    
+}
+
+h1{
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+#name-btn,.result-btn,#next-btn{
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#next-btn{
+    position: absolute;
+    left: 252px;
+    top: 395px;
+}
+
+#category-btn-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.category-btn{
+    border: var(--primary-color) solid 1px;
+    padding: 3%;
+    background-color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#timer-score-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+#timer-container{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    border: var(--primary-color) solid 0.2rem;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 0.2rem;
+}
+
+#question-box{
+    border: #000 solid 1px;
+    border-radius: 5px;
+    position: relative;
+    padding: 3%;
+}
+
+#question-number{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    border: var(--primary-color) solid 0.2rem;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 0.3rem;
+    position: absolute;
+    top: -50px;
+    right: 235px;
+    background-color: #fff;
+}
+
+#answer-btn-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 5%;
+}
+
+.answer-btn{
+    border: var(--primary-color) solid 1px;
+    padding: 3%;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* defining classes to add dynamically to html elements */
+.correct{
+    /* adds green color to correct answer */
+    background-color: rgb(20, 240, 79);
+}
+
+.wrong{
+    /* adds red color to wrong answer */
+    background-color: rgb(240, 20, 79);
+    color: white;
+}
+
+.hide{
+    /* hides the element */
+    display: none;
+}
+
+.correctBoxShadow{
+    /* adds green color to main container when answer is right */
+    box-shadow: 0 0 10px 2px rgb(20, 240, 79);
+}
+
+.wrongBoxShadow{
+    /* adds red color to main container when answer is wrong */
+    box-shadow: 0 0 10px 2px rgb(240, 20, 79);
+}
+
